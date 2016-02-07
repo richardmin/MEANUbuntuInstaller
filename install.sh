@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+
 #TODO: Error Checking (For failure of these commands!)
 
 #mongodb setup

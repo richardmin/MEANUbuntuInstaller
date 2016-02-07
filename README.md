@@ -1,17 +1,20 @@
-#Script to Install all Dependencies for [MEAN.js](https://github.com/meanjs/mean) Boilerplate
+#Script to Install [MEAN.js](https://github.com/meanjs/mean) Boilerplate
 ##Details
-This script is designed for Ubuntu servers: it has been tested on a clean Amazon EC2 Ubuntu 14.04 AWS server, and installs the full MEAN.js dependencies as well as placing the MEAN.js boilerplate into the current directory in a folder called mean.js. Please note that you must be root user (or have root permissions) to run this script.
+This script installs the entire MEAN stack on a clean Ubuntu server.
+This script has (so far) only been tested on Amazon EC2 Ubuntu 14.04.
+All dependencies will be installed, as well as placing the MEAN.js boilerplate into the current directory in a folder called meanjs. 
+Please note that you must be root user (or have root permissions) to run this script.
 
 ##Downloading the script
 To download this script from github, you can:
 ###Clone the Git Repository
 
 ```bash
-git clone https://github.com/%URL%
+git clone https://github.com/richardmin97/MEANUbuntuInstaller.git
 ```
 ###Download the Repository zip file
 ```bash
-wget https://github.com/%URL%
+wget https://github.com/richardmin97/MEANUbuntuInstaller/archive/master.zip -O meanInstaller.zip; unzip meanInstaller.zip; rm meanInstaller.zip 
 ```
 
 Both of these download the script into a folder on the desktop called MeanJSInstallScript.
@@ -27,7 +30,7 @@ After running the script, it runs for about 30 minutes and after that you should
 ```bash
 grunt
 ```
-Your application should be running on port 3000, and if your firewall settings are open, you can view it through your browser using YOURIPADDRESS:3000.
+Your application should be running on port 3000, and if your firewall settings are open, you can view it through your browser using SERVERIPADDRESS:3000.
 
 
 ##Credits
